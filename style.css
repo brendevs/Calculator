@@ -1,0 +1,107 @@
+/* body */
+body {
+    justify-content: center; 
+    background-color: rgb(237, 237, 237);
+    margin: 5% 0px 0px 0px;
+}
+.parent {
+    border: 2px solid beige; 
+    border-radius: 40px; 
+    height: 500px;
+    width: 250px;
+    opacity: 0.9;
+    background-color: rgba(225, 224, 224, 0.699);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.249);
+    justify-self: center;
+}
+
+.child1 {
+    border: none;
+    height: 20%;
+    width: 100%; 
+}
+
+.history {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    color: rgb(127, 98, 98);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7px;
+    letter-spacing: 3px;
+}
+
+.calculator {
+    text-align: center;
+    font-size: 10px;
+    padding-left: 13px;
+    letter-spacing: 10px;
+    color: brown;
+    margin: 40px 0% 40px 0%;
+    font-weight: lighter;
+}
+
+.child2 {
+    border: none;
+    height: 10%;
+    margin: 6px;
+    border-radius: none;
+}
+
+input {
+    font-size: xx-large;
+    font-weight: lighter;
+    height: 90%;
+    width: 97%;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    color: rgb(127, 98, 98);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: none;
+    text-align: right;
+}
+.child3 {
+    border: none;
+    height: 230px;
+    margin: 4px;
+    padding: 5px;
+    position: sticky;
+
+}
+
+/* /body */
+
+
+/* button css */
+
+
+button {
+    height: 55px;
+    width: 55px;
+    border-radius: 35px;
+    background-color: rgba(227, 227, 227, 0.774);
+    box-shadow: 0px 0px 10px 0px rgb(241, 241, 241);
+    border: 1px solid beige;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgba(127, 98, 98, 0.682);
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.882);
+    box-shadow: 0px 0px 20px 0px rgb(255, 255, 221);
+    border: 10px solid rgba(255, 255, 255, 0.129);
+    transition: 0.8s;
+    color:rgb(127, 98, 98);
+    
+}
+
+/* 0 / number zero button */
+zeroButton {
+    height: 55px;
+    width: 105px;
+    border-radius: 35px;
+    background-color: rgba(227, 227, 227, 0.774);
+    box-shadow: 0px 0px 10px 0px rgba(110, 110, 110, 0.571);
+    border: none;
+}
