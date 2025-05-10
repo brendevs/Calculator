@@ -1,72 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>kalkulator</title>
-        <link rel="stylesheet" href="style.css" >
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <body>
+  <body>
+    <p class="calculator">C A L C U L A T O R</p>
 
-        <p class="calculator">
-             C A L C U L A T O R
-        </p>
+    <div class="parent">
+      <div class="child1">
+        <p class="history">HISTORY</p>
+      </div>
 
-        <div class="parent">
+      <div class="child2">
+        <input id="display" />
+      </div>
 
-            <div class="child1">
+      <div class="child3">
+        <div style="margin: 0px 0px 5px; position: sticky">
+          <button onclick="pahi('')">AC</button>
+          <button onclick="bura('0')">C</button>
+          <button onclick="operator('%')">%</button>
+          <button onclick="operator('/')">÷</button>
+        </div>
 
-                <p class="history">
-                    HISTORY
-                </p>
-            </div>
+        <div style="margin: 5px 0px 5px; position: sticky">
+          <button onclick="number('1')">I</button>
+          <button onclick="number('2')">II</button>
+          <button onclick="number('3')">III</button>
+          <button onclick="operator('*')">X</button>
+        </div>
 
-            <div class="child2">
+        <div style="margin: 5px 0px 5px; position: sticky">
+          <button onclick="number('4')">IV</button>
+          <button onclick="number('5')">V</button>
+          <button onclick="number('6')">VI</button>
+          <button onclick="operator('+')">+</button>
+        </div>
 
-                <input id="display">
-            </div>
+        <div style="margin: 5px 0px 5px; position: sticky">
+          <button onclick="number('7')">VII</button>
+          <button onclick="number('8')">VIII</button>
+          <button onclick="number('9')">IX</button>
+          <button onclick="operator('-')">-</button>
+        </div>
 
-            <div class="child3">
+        <div style="margin: 5px 0px 3px; position: sticky">
+          <button style="width: 112px" onclick="number('0')">O</button>
+          <button onclick="number('.')">.</button>
+          <button onclick="result('')">=</button>
+        </div>
 
-                <div style="margin: 0px 0px 5px; position: sticky;">
-                    <button onclick="pahi('')">AC</button>
-                    <button onclick="bura('0')">C</button>
-                    <button onclick="operator('%')">%</button>
-                    <button onclick="operator('/')">÷</button>
-                </div>
-
-                <div style="margin: 5px 0px 5px; position: sticky;">
-                    <button onclick="number('1')">I</button>    
-                    <button onclick="number('2')">II</button>                
-                    <button onclick="number('3')">III</button>
-                    <button onclick="operator('*')">X</button>
-                </div>
-
-                <div style="margin: 5px 0px 5px; position: sticky;">
-                    <button onclick="number('4')">IV</button>
-                    <button onclick="number('5')">V</button>
-                    <button onclick="number('6')">VI</button>
-                    <button onclick="operator('+')">+</button>
-                </div>
-
-                <div style="margin: 5px 0px 5px; position: sticky;">
-                   <button onclick="number('7')">VII</button>
-                   <button onclick="number('8')">VIII</button>
-                   <button onclick="number('9')">IX</button>
-                   <button onclick="operator('-')">-</button>
-                </div>
-
-                <div style="margin: 5px 0px 3px; position: sticky;">
-                  <button style="width: 112px" onclick="number('0')">O</button>
-                  <button onclick="number('.')">.</button>
-                  <button onclick="result('')">=</button>
-                </div>
-
-                <script src="jav.js"> 
-
-                </script>
-            </div>
-        </div>  
-    </body>
+        <script src="jav.js"></script>
+      </div>
+    </div>
+  </body>
 </html>
