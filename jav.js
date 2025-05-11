@@ -8,8 +8,15 @@ function number(input) {
 function bura(input) {
   display.value = "";
 }
-function operator(input) {
-  display.value += input;
+function addOperator(operators) {
+  const current = display.value;
+  const lastChar = current.slice(-1);
+
+  if (operators.includes(lastChar)) {
+    display.value = current.slice(0, -1) + operators;
+  } else if (current !== "") {
+    display.value += operators;
+  }
 }
 function result(input) {
   try {
