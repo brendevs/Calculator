@@ -5,7 +5,7 @@ const display = document.getElementById("display");
 function number(input) {
   display.value += input;
 }
-function bura(input) {
+function pahi(input) {
   display.value = "";
 }
 function addOperator(operators) {
@@ -25,6 +25,6 @@ function result(input) {
     display.value = "Error";
   }
 }
-function pahi() {
+function bura() {
   display.value = display.value.slice(0, -1);
 }
